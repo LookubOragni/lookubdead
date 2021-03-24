@@ -1,14 +1,14 @@
 name: Plugin1
 version: 0.0.1
-author: loric
+author: DeadSAGA
 main: mainPackage.mainClass
 commands:
   test:
-    description: ceci est une commande de test
-    permition: test.use
+    description: 
+    permission: test.use
   alert:
-    description: ceci est un broadcast custom
-    permition: bc.use
+    description: 
+    permission: bc.use
   kit:
-    description: ceci sert a avoir un kit de d'épart
-    permition: kit.use
+    description:
+    permission: kit.use

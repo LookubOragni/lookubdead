@@ -18,7 +18,7 @@ public class CommandTest implements CommandExecutor {
 				Player player = (Player)sender;
 				
 				if(cmd.getName().equalsIgnoreCase("test")){
-					player.sendMessage(ChatColor.BLACK + "tu a passer le test");
+					player.sendMessage(ChatColor.YELLOW + "tu a passer le test");
 							return true;
 				}
 				if(cmd.getName().equalsIgnoreCase("alert")){
@@ -49,14 +49,12 @@ public class CommandTest implements CommandExecutor {
 			
 							return true;	
 					}
-
-			
-						return false;
 			
 		
 	
 	
 			}
+			return false;
 	}
 }
 
