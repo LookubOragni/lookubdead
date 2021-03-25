@@ -12,3 +12,9 @@ commands:
   kit:
     description:
     permission: kit.use
+  plugins:
+    description:
+    permission: plugins.use
+  pl:
+    description:
+    permission: plugins.use

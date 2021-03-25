@@ -12,6 +12,8 @@ public class mainClass extends JavaPlugin {
 				getCommand("test").setExecutor(new CommandTest());
 				getCommand("alert").setExecutor(new CommandTest());
 				getCommand("kit").setExecutor(new CommandTest());
+				getCommand("plugins").setExecutor(new CommandTest());
+				getCommand("Pl").setExecutor(new CommandTest());
 				getServer().getPluginManager().registerEvents(new MonPluginListeners(), this);
 				
 	}

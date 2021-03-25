@@ -15,8 +15,7 @@ public class CommandTest implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
 		
 			if(sender instanceof Player){
-				Player player = (Player)sender;
-				
+				Player player = (Player)sender;	
 				if(cmd.getName().equalsIgnoreCase("test")){
 					player.sendMessage(ChatColor.YELLOW + "tu a passer le test");
 							return true;
@@ -44,19 +43,34 @@ public class CommandTest implements CommandExecutor {
 					
 				}
 				if(cmd.getName().equalsIgnoreCase("kit")){
-					player.getInventory().addItem(new ItemStack(Material.IRON_SWORD, 3));
-					
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_SWORD, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_PICKAXE, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_AXE, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_HOE, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_HELMET, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_CHESTPLATE, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_LEGGINGS, 1));
+					player.getInventory().addItem(new ItemStack(Material.DIAMOND_BOOTS, 1));
 			
 							return true;	
 					}
+				
+				if(cmd.getName().equalsIgnoreCase("plugins")){
+					player.sendMessage(ChatColor.RED + "Vous ne pouvez utiliser cette commande");
+				
+							return true;
+					}
+				
+				if(cmd.getName().equalsIgnoreCase("pl")){
+					player.sendMessage(ChatColor.RED + "Vous ne pouvez utiliser cette commande");
+				
+							return true;
+					}
 			
-		
-	
-	
+			
 			}
-			return false;
-	}
+				return false;
+
+
+		}		
 }
-
-
-		
