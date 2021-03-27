@@ -19,7 +19,7 @@ public class Commandrtp implements CommandExecutor {
 				Player player = (Player) sender;
 				Location ploc = player.getLocation();
 				Location spawn = new Location(player.getWorld(), ploc.getX() + random.nextInt(100), ploc.getY(), ploc.getZ() + random.nextInt(100));
-				player.sendMessage(ChatColor.YELLOW + "vous venez de vous tp eu spawn");
+				player.sendMessage(ChatColor.YELLOW + "vous venez de vous tp aléatoirement");
 				player.teleport(spawn);
 		}
 		return false;
