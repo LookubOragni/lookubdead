@@ -18,3 +18,5 @@ commands:
   pl:
     description:
     permission: plugins.use
+  spawn:
+    description:

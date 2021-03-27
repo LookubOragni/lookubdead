@@ -2,6 +2,7 @@ package mainPackage;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import mainPackage.commands.CommandSpawn;
 import mainPackage.commands.CommandTest;
 
 public class mainClass extends JavaPlugin {
@@ -14,6 +15,7 @@ public class mainClass extends JavaPlugin {
 				getCommand("kit").setExecutor(new CommandTest());
 				getCommand("plugins").setExecutor(new CommandTest());
 				getCommand("Pl").setExecutor(new CommandTest());
+				getCommand("spawn").setExecutor(new CommandSpawn());
 				getServer().getPluginManager().registerEvents(new MonPluginListeners(), this);
 				
 	}
